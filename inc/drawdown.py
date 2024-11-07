@@ -9,7 +9,7 @@ def calculate_max_drawdown(portfolio):
 
   # Download historical data for ETFs
   now = datetime.now().strftime("%Y-%m-%d")
-  data = yf.download(tickers, start='1980-01-01', end=now)['Adj Close']
+  data = yf.download(tickers, start='2020-01-01', end=now)['Adj Close']
 
   # We add the Bond component as a constant value for each date
   if bond is not None:
